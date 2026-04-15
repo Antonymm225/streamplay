@@ -419,30 +419,30 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="relative z-10 mt-6 rounded-[2rem] border border-[#f1dde4] bg-white px-6 py-7 shadow-[0_18px_42px_rgba(200,150,168,0.08)] sm:px-7">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+        <footer className="relative z-10 mt-8 rounded-[1.25rem] bg-[#241d24] px-6 py-8 text-white sm:px-7">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-xl">
-              <p className="text-sm uppercase tracking-[0.28em] text-ink-soft">
+              <p className="text-sm uppercase tracking-[0.28em] text-white/55">
                 Informacion del negocio
               </p>
               <h2
-                className="mt-3 text-3xl tracking-[-0.04em] text-foreground"
+                className="mt-3 text-3xl tracking-[-0.04em] text-white"
                 style={{ fontFamily: "var(--font-playfair), serif" }}
               >
                 Streamplay Peru
               </h2>
-              <p className="mt-2 text-sm leading-6 text-ink-soft">
+              <p className="mt-2 text-sm leading-6 text-white/72">
                 Datos comerciales visibles en el footer para reforzar confianza y
                 evitar observaciones por identificacion del negocio.
               </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:min-w-[520px]">
-              <div className="rounded-[1.4rem] border border-line/70 bg-surface px-4 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ink-soft">
+            <div className="grid gap-6 sm:grid-cols-2 lg:min-w-[520px]">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">
                   Direccion
                 </p>
-                <p className="mt-2 text-sm leading-6 text-foreground">
+                <p className="mt-2 text-sm leading-6 text-white/82">
                   Jose Pardo De Zela 236
                   <br />
                   LINCE, LIMA 15046
@@ -451,35 +451,63 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="rounded-[1.4rem] border border-line/70 bg-surface px-4 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ink-soft">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">
                   Telefono
                 </p>
-                <p className="mt-2 text-sm leading-6 text-foreground">
-                  <a href="tel:+51961845278">+51961845278</a>
+                <p className="mt-2 text-sm leading-6 text-white/82">
+                  <a href="tel:+51961845278" className="hover:text-white">
+                    +51961845278
+                  </a>
                 </p>
               </div>
 
-              <div className="rounded-[1.4rem] border border-line/70 bg-surface px-4 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ink-soft">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">
                   RUC
                 </p>
-                <p className="mt-2 text-sm leading-6 text-foreground">
+                <p className="mt-2 text-sm leading-6 text-white/82">
                   20612101650
                 </p>
               </div>
 
-              <div className="rounded-[1.4rem] border border-line/70 bg-surface px-4 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ink-soft">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">
                   Sitio web
                 </p>
-                <p className="mt-2 text-sm leading-6 text-foreground">
-                  <a href="https://streamplay.pe/" target="_blank" rel="noreferrer">
+                <p className="mt-2 text-sm leading-6 text-white/82">
+                  <a
+                    href="https://streamplay.pe/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-white"
+                  >
                     streamplay.pe
                   </a>
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/12 pt-6 text-sm text-white/72">
+            <a
+              href="/politica-de-privacidad"
+              className="transition-colors hover:text-white"
+            >
+              Politica de Privacidad
+            </a>
+            <a
+              href="/terminos-y-condiciones"
+              className="transition-colors hover:text-white"
+            >
+              Terminos y Condiciones
+            </a>
+            <a
+              href="/condiciones-del-servicio"
+              className="transition-colors hover:text-white"
+            >
+              Condiciones del Servicio
+            </a>
           </div>
         </footer>
       </div>
